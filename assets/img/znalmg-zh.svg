@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1450" viewBox="0 0 1200 1450" role="img" aria-labelledby="title desc">
+ <title id="title">鎂鋁鋅鍍層自我修復防鏽機制</title>
+ <desc id="desc">說明切邊裸露後紅鏽可能形成，鄰近鎂鋁鋅鍍層溶解並生成腐蝕產物，逐步覆蓋切邊，減緩紅鏽擴展。</desc>
+ <defs>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#596574"/><stop offset=".45" stop-color="#7e8995"/><stop offset="1" stop-color="#525d6a"/></linearGradient>
+  <linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#345e88"/><stop offset="1" stop-color="#173d68"/></linearGradient>
+  <linearGradient id="film" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ed6e19"/><stop offset="1" stop-color="#c54c13"/></linearGradient>
+  <marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#ed6e19"/></marker>
+  <marker id="arrN" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#002858"/></marker>
+  <pattern id="grain" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M2 0v14M8 0v14" stroke="#fff" stroke-opacity=".06" stroke-width="2"/></pattern>
+  <style>
+   .navy{fill:#002858}.white{fill:#fff}.gray{fill:#c5c5c5}.orange{fill:#ed6e19}.red{fill:#d8302f}
+   .title{font:700 44px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}.sub{font:400 21px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}
+   .head{font:700 25px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}.body{font:400 20px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}
+   .small{font:400 16px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}.label{font:700 17px 'PingFang TC','Noto Sans CJK TC',Arial,sans-serif}
+   .latin{font-family:Arial,sans-serif}
+  </style>
+ </defs>
+ <rect width="1200" height="1450" fill="#fff"/>
+ <rect width="14" height="1450" fill="#ed6e19"/>
+ <text x="64" y="87" class="title navy">鎂鋁鋅鍍層的自我修復防鏽機制</text>
+ <text x="67" y="127" class="sub navy" opacity=".75">切邊受損後，鍍層腐蝕產物逐步覆蓋裸露鋼材，減緩紅鏽擴展</text>
+ <rect x="64" y="161" width="1072" height="58" rx="14" fill="#002858"/>
+ <circle cx="97" cy="190" r="9" fill="#ed6e19"/>
+ <text x="120" y="198" class="label white">Zn - Mg - Al 合金鍍層</text>
+ <text x="1102" y="198" text-anchor="end" class="small white" opacity=".85">概念示意圖</text>
+
+ <!-- Upper panel: initial exposure -->
+ <rect x="64" y="248" width="1072" height="414" rx="22" fill="#f5f6f7" stroke="#dfe3e7" stroke-width="2"/>
+ <circle cx="105" cy="294" r="22" fill="#002858"/><text x="105" y="301" text-anchor="middle" class="label white latin">1</text>
+ <text x="143" y="302" class="head navy">切邊裸露：腐蝕可能開始</text>
+ <text x="143" y="333" class="small navy" opacity=".7">切割後，鋼材邊緣直接接觸水分與氧氣</text>
+ <!-- environment -->
+ <path d="M468 365c-11 17-18 26-18 38a18 18 0 0036 0c0-12-7-21-18-38z" fill="#c5c5c5"/>
+ <path d="M565 349c-8 12-13 20-13 29a13 13 0 0026 0c0-9-5-17-13-29z" fill="#c5c5c5"/>
+ <text x="620" y="379" class="small navy">水分</text><circle cx="684" cy="371" r="5" fill="#ed6e19"/><circle cx="711" cy="389" r="5" fill="#ed6e19"/>
+ <text x="728" y="379" class="small navy">氧氣</text>
+ <!-- steel slab and coating horizontal; cut edge exposed at right -->
+ <rect x="177" y="425" width="800" height="67" fill="url(#coat)"/>
+ <rect x="177" y="492" width="800" height="126" fill="url(#steel)"/>
+ <rect x="177" y="492" width="800" height="126" fill="url(#grain)"/>
+ <rect x="977" y="425" width="42" height="193" fill="#747e88" stroke="#002858" stroke-width="2"/>
+ <path d="M1000 493c-18-21 1-43 8-53 11 16 22 34 8 51-5 8-12 8-16 2z" fill="#d8302f"/>
+ <path d="M1011 495c2-32 29-38 34-62 14 20 7 54-10 66-8 6-18 5-24-4z" fill="#ed6e19" opacity=".92"/>
+ <text x="560" y="468" text-anchor="middle" class="label white">鎂鋁鋅合金鍍層</text>
+ <text x="560" y="568" text-anchor="middle" class="head white">鋼材</text>
+ <path d="M1049 468h39" stroke="#d8302f" stroke-width="3" marker-end="url(#arr)"/>
+ <text x="1094" y="457" class="label red" text-anchor="end">紅鏽</text>
+ <text x="1044" y="546" class="small navy">裸露切邊</text>
+ <path d="M937 386 C969 401 991 419 1003 449" fill="none" stroke="#002858" stroke-width="3" marker-end="url(#arrN)"/>
+ <text x="862" y="381" class="small navy">切割面</text>
+
+ <!-- process transition -->
+ <path d="M600 678v53" stroke="#c5c5c5" stroke-width="12" marker-end="url(#arrN)"/>
+ <rect x="383" y="700" width="434" height="44" rx="22" fill="#fff" stroke="#dfe3e7" stroke-width="2"/>
+ <text x="600" y="729" text-anchor="middle" class="small navy">鍍層中的 Zn、Mg 等元素參與反應</text>
+
+ <!-- Lower panel: healing -->
+ <rect x="64" y="770" width="1072" height="586" rx="22" fill="#f5f6f7" stroke="#dfe3e7" stroke-width="2"/>
+ <circle cx="105" cy="817" r="22" fill="#ed6e19"/><text x="105" y="824" text-anchor="middle" class="label white latin">2</text>
+ <text x="143" y="825" class="head navy">自我修復效應：腐蝕產物覆蓋切邊</text>
+ <text x="143" y="856" class="small navy" opacity=".7">鄰近鍍層溶解，促進形成緻密、穩定的保護層</text>
+ <!-- large cut edge detail -->
+ <rect x="168" y="934" width="647" height="84" fill="url(#coat)"/>
+ <rect x="168" y="1018" width="647" height="240" fill="url(#steel)"/>
+ <rect x="168" y="1018" width="647" height="240" fill="url(#grain)"/>
+ <!-- exposed cut end with sealing film wrapped around -->
+ <path d="M815 934h50q15 18 14 42v234q0 30-16 48h-48z" fill="url(#coat)"/>
+ <path d="M854 978q30 17 26 45v185q3 22-14 39l-29-1V978z" fill="url(#film)"/>
+ <path d="M858 979q18 17 17 43v185q1 20-12 38" fill="none" stroke="#ffb36c" stroke-width="8" stroke-linecap="round"/>
+ <!-- a small red rust spot protected beneath deposit -->
+ <ellipse cx="841" cy="1117" rx="15" ry="35" fill="#d8302f"/>
+ <ellipse cx="838" cy="1112" rx="7" ry="22" fill="#ff8c72" opacity=".7"/>
+ <text x="458" y="985" text-anchor="middle" class="label white">鎂鋁鋅合金鍍層</text>
+ <text x="458" y="1199" text-anchor="middle" class="head white">鋼材</text>
+ <path d="M933 1002 C1004 1010 1029 1050 1008 1090" fill="none" stroke="#002858" stroke-width="3" marker-end="url(#arrN)"/>
+ <text x="932" y="977" class="small navy">腐蝕產物逐步</text><text x="932" y="1001" class="small navy">覆蓋切邊</text>
+ <text x="930" y="1134" class="label red" style="font-size:26px">紅鏽受到覆蓋</text>
+ <text x="841" y="1167" text-anchor="middle" class="small white">紅鏽</text>
+ <!-- takeaway callout -->
+ <rect x="166" y="1285" width="868" height="48" rx="14" fill="#002858"/>
+ <text x="600" y="1317" text-anchor="middle" class="label white">緻密保護層覆蓋切邊，減緩紅鏽形成與擴展</text>
+
+ <text x="66" y="1400" class="small navy" opacity=".68">鎂鋁鋅鍍層的防護機制示意</text>
+ <text x="1134" y="1400" text-anchor="end" class="small navy" opacity=".68">自我修復指腐蝕產物覆蓋切邊</text>
+</svg>
