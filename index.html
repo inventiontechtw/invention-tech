@@ -1,534 +1,275 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-lang="zh">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>創炘工業科技｜鎂鋁鋅太陽能支架 Invention Industrial Technology</title>
-<meta name="description" content="創炘工業科技股份有限公司－高雄大寮，專注高品質鎂鋁鋅太陽能支架。多項專利、高耐風、耐久防蝕，原料自行進口，為客戶量身訂做專屬支架。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-en="Invention Industrial | Precision Roof-Mount Solar Racking">創炘工業｜精工設計 屋頂型太陽能支架</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="創炘工業科技：源自鋼鐵本業的鎂鋁鋅太陽能支架，主攻屋頂平鋪型、夾具型與滑軌型，風洞與拉拔試驗驗證。">
+<meta property="og:title" content="創炘工業｜精工設計 屋頂型太陽能支架">
+<meta property="og:description" content="創炘工業科技：源自鋼鐵本業的鎂鋁鋅太陽能支架，主攻屋頂平鋪型、夾具型與滑軌型，風洞與拉拔試驗驗證。">
+<meta property="og:image" content="images/hero-roof.jpg">
+<link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#0b2436; --navy-2:#123650; --steel:#5c6f7e; --line:#dfe5ea;
-  --bg:#f5f7f9; --white:#fff; --ink:#1b2833; --muted:#5f6d78;
-  --sun:#f2a516; --sun-dark:#d18b00;
-  --radius:10px; --max:1180px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{font-family:"Inter","Noto Sans TC",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-
-/* language toggle */
-html[lang="en"] .zh{display:none!important}
-html:not([lang="en"]) .en{display:none!important}
-
-/* header */
-header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(11,36,54,.96);backdrop-filter:blur(6px);color:#fff}
-.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
-.brand-mark{width:34px;height:34px;border-radius:7px;background:linear-gradient(135deg,var(--sun),#ffcf5c);display:grid;place-items:center;color:var(--navy);font-weight:900;font-size:18px}
-.brand small{display:block;font-size:10px;font-weight:600;opacity:.7;letter-spacing:.08em;line-height:1.1}
-.brand b{display:block;font-size:16px;line-height:1.2}
-.menu{display:flex;gap:26px;font-size:15px}
-.menu a{opacity:.85}
-.menu a:hover{opacity:1;color:var(--sun)}
-.nav-right{display:flex;align-items:center;gap:12px}
-.lang-btn{border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;font-family:inherit}
-.lang-btn:hover{border-color:var(--sun);color:var(--sun)}
-.burger{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer;line-height:1}
-
-/* hero */
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;background:
-  linear-gradient(100deg,rgba(11,36,54,.94) 0%,rgba(11,36,54,.78) 45%,rgba(11,36,54,.35) 100%),
-  url(images/hero.jpg);background-size:cover;background-position:center;padding:110px 0 70px}
-.hero .wrap{width:100%}
-.hero h1{font-size:clamp(32px,5vw,58px);line-height:1.2;font-weight:900;margin:14px 0 18px;max-width:760px}
-.hero h1 em{font-style:normal;color:var(--sun)}
-.hero p.lead{font-size:clamp(16px,1.6vw,19px);max-width:620px;opacity:.9}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 14px;font-size:13px;letter-spacing:.05em}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:8px;font-weight:700;font-size:15px;transition:.2s}
-.btn-sun{background:var(--sun);color:var(--navy)}
-.btn-sun:hover{background:#ffbb33}
-.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.1)}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:56px;max-width:720px}
-.stat b{display:block;font-size:clamp(24px,3vw,36px);font-weight:800;color:var(--sun);line-height:1.1}
-.stat span{font-size:13px;opacity:.8}
-
-/* sections */
-section{padding:96px 0}
-.alt{background:var(--bg)}
-.dark{background:var(--navy);color:#fff}
-.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--sun-dark);font-weight:700}
-.dark .eyebrow{color:var(--sun)}
-h2{font-size:clamp(26px,3.2vw,38px);font-weight:900;line-height:1.3;margin:8px 0 16px}
-.sub{color:var(--muted);max-width:720px;font-size:16px}
-.dark .sub{color:rgba(255,255,255,.75)}
-.head{margin-bottom:48px}
-.grid{display:grid;gap:22px}
-.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.2s}
-.card:hover{box-shadow:0 10px 30px rgba(11,36,54,.08);transform:translateY(-2px)}
-.card h3{font-size:19px;font-weight:800;margin-bottom:6px}
-.card p{color:var(--muted);font-size:15px}
-
-/* image placeholders */
-.ph{background:linear-gradient(135deg,#dbe3ea,#c4d0da);border-radius:var(--radius);aspect-ratio:4/3;display:grid;place-items:center;color:#7d8d99;font-size:13px;overflow:hidden}
-.ph img{width:100%;height:100%;object-fit:cover}
-.ph.contain{background:#fff;border:1px solid var(--line)}
-.ph.contain img{object-fit:contain;padding:10px}
-
-/* about */
-.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
-.checks{list-style:none;margin-top:22px;display:grid;gap:10px}
-.checks li{padding-left:30px;position:relative}
-.checks li::before{content:"";position:absolute;left:0;top:7px;width:18px;height:18px;border-radius:50%;background:var(--sun);
-  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0a10 10 0 100 20 10 10 0 000-20zm-1.2 14.2L4.6 10l1.4-1.4 2.8 2.8 5.2-5.2 1.4 1.4-6.6 6.6z'/%3E%3C/svg%3E") center/contain no-repeat;
-  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0a10 10 0 100 20 10 10 0 000-20zm-1.2 14.2L4.6 10l1.4-1.4 2.8 2.8 5.2-5.2 1.4 1.4-6.6 6.6z'/%3E%3C/svg%3E") center/contain no-repeat}
-
-/* advantages */
-.adv{text-align:center;padding:30px 20px}
-.adv .ico{width:54px;height:54px;border-radius:12px;background:rgba(242,165,22,.12);color:var(--sun-dark);display:grid;place-items:center;margin:0 auto 14px;font-size:24px;font-weight:900}
-
-/* process */
-.steps{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;counter-reset:s}
-.step{position:relative;background:var(--navy-2);border-radius:var(--radius);padding:22px 14px;text-align:center;counter-increment:s}
-.step::before{content:counter(s,decimal-leading-zero);display:block;font-weight:800;color:var(--sun);font-size:22px;margin-bottom:6px}
-.step b{display:block;font-size:15px;line-height:1.4}
-.step small{display:block;font-size:12px;opacity:.6;margin-top:4px;line-height:1.3}
-
-/* material */
-.mat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.formula{font-family:"Inter",monospace;background:var(--navy);color:var(--sun);padding:4px 10px;border-radius:6px;font-size:14px;white-space:nowrap}
-.compare{margin-top:26px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
-.compare div{display:flex;justify-content:space-between;gap:16px;text-align:right;padding:12px 18px;border-top:1px solid var(--line);font-size:15px}
-.compare div:first-child{border-top:0;background:var(--bg);font-weight:700;font-size:13px;color:var(--muted)}
-.compare .hl{background:rgba(242,165,22,.1);font-weight:800}
-.brands{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
-.brand-chip{border:1px solid var(--line);background:#fff;border-radius:8px;padding:12px 18px}
-.brand-chip b{display:block;font-size:17px}
-.brand-chip span{font-size:13px;color:var(--muted)}
-
-/* products */
-.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
-.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 20px;font-size:15px;cursor:pointer;font-family:inherit;color:var(--ink)}
-.tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
-.panel{display:none}
-.panel.on{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:start}
-.models{display:grid;gap:12px}
-.model{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--sun);border-radius:8px;padding:14px 18px;font-size:15px}
-.model .no{grid-row:span 2;font-weight:800;font-size:20px;color:var(--navy);min-width:72px}
-.model span{color:var(--muted)}
-
-/* tests */
-.test-feature{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px}
-.big{background:var(--navy-2);border-radius:var(--radius);padding:30px}
-.big b{font-size:clamp(34px,4vw,48px);font-weight:800;color:var(--sun);line-height:1}
-.big b small{font-size:18px;margin-left:4px}
-.big h3{margin:12px 0 4px;font-size:19px}
-.big p{opacity:.75;font-size:15px}
-table{width:100%;border-collapse:collapse;font-size:15px}
-.tbl{overflow-x:auto;border-radius:var(--radius);border:1px solid rgba(255,255,255,.15)}
-.tbl th,.tbl td{padding:12px 16px;text-align:left;border-bottom:1px solid rgba(255,255,255,.1);white-space:nowrap}
-.tbl th{font-size:13px;opacity:.6;font-weight:600}
-.tbl td.r{font-family:"Inter";opacity:.8}
-
-/* screws */
-.iso{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
-.iso th,.iso td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:left}
-.iso th{background:var(--bg);font-size:13px;color:var(--muted)}
-.iso td:last-child{font-weight:800;color:var(--navy)}
-
-/* cases */
-.case figcaption{margin-top:10px;font-weight:700}
-.case figcaption small{display:block;font-weight:400;color:var(--muted);font-size:13px}
-
-/* contact */
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.info{display:grid;gap:14px}
-.info a,.info div{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
-.info a:hover{border-color:var(--sun)}
-.info .k{min-width:70px;font-size:13px;color:var(--sun);font-weight:700;padding-top:2px}
-.map{border-radius:var(--radius);overflow:hidden;min-height:340px;background:var(--navy-2)}
-.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
-
-footer{background:#071824;color:rgba(255,255,255,.55);font-size:13px;padding:26px 0}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-
-.fab{position:fixed;right:18px;bottom:18px;z-index:40;background:#06c755;color:#fff;border-radius:999px;padding:12px 18px;font-weight:700;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.2)}
-
-/* responsive */
-@media (max-width:1000px){
-  .steps{grid-template-columns:repeat(4,minmax(0,1fr))}
-  .g4{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media (max-width:860px){
-  .menu{display:none;position:absolute;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;gap:0;padding:8px 0}
-  .menu.open{display:flex}
-  .menu a{padding:12px 20px}
-  .burger{display:block}
-  .about,.mat,.contact,.test-feature,.panel.on{grid-template-columns:1fr}
-  .g3,.g2{grid-template-columns:1fr}
-  section{padding:68px 0}
-}
-@media (max-width:560px){
-  .wrap{padding:0 16px}
-  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .g4{grid-template-columns:1fr 1fr}
-  .stats{grid-template-columns:1fr 1fr 1fr;gap:10px}
-  .brand small{display:none}
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>.skip{position:absolute;left:-9999px;top:0;z-index:50;background:#002858;color:#fff;padding:12px 18px}.skip:focus{left:16px;top:calc(16px + env(safe-area-inset-top,0px))}</style>
 </head>
 <body>
-
-<header>
-  <div class="wrap nav">
-    <a href="#top" class="brand">
-      <span class="brand-mark">炘</span>
-      <span><b><span class="zh">創炘工業科技</span><span class="en">INVENTION</span></b><small>INVENTION INDUSTRIAL TECHNOLOGY</small></span>
-    </a>
-    <nav class="menu" id="menu">
-      <a href="#about"><span class="zh">關於我們</span><span class="en">About</span></a>
-      <a href="#material"><span class="zh">材質</span><span class="en">Material</span></a>
-      <a href="#products"><span class="zh">產品介紹</span><span class="en">Products</span></a>
-      <a href="#tests"><span class="zh">檢驗報告</span><span class="en">Test Reports</span></a>
-      <a href="#cases"><span class="zh">實績分享</span><span class="en">Projects</span></a>
-      <a href="#contact"><span class="zh">聯絡我們</span><span class="en">Contact</span></a>
-    </nav>
-    <div class="nav-right">
-      <button class="lang-btn" id="langBtn" aria-label="Switch language"><span class="zh">EN</span><span class="en">中文</span></button>
-      <button class="burger" id="burger" aria-label="Menu">☰</button>
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
-<div class="hero" id="top">
-  <div class="wrap">
-    <div class="tags">
-      <span class="tag"><span class="zh">專案設計</span><span class="en">Custom Design</span></span>
-      <span class="tag"><span class="zh">防鏽材質</span><span class="en">Anti-Corrosion</span></span>
-      <span class="tag"><span class="zh">台灣精工</span><span class="en">Made in Taiwan</span></span>
-      <span class="tag"><span class="zh">堅固耐用</span><span class="en">Built to Last</span></span>
-    </div>
-    <h1>
-      <span class="zh">高品質<em>鎂鋁鋅</em><br>太陽能支架</span>
-      <span class="en">High-Quality <em>Zn-Al-Mg</em><br>Solar Mounting Systems</span>
-    </h1>
-    <p class="lead">
-      <span class="zh">多項專利設計、高耐風結構。原料自行進口、去中間化，為每個案場量身訂做專屬支架。</span>
-      <span class="en">Patented, high wind-resistance designs. We import our own raw materials and cut out the middleman — and tailor every mounting system to its site.</span>
-    </p>
-    <div class="btns">
-      <a href="#contact" class="btn btn-sun"><span class="zh">免費諮詢報價</span><span class="en">Get a Free Quote</span> →</a>
-      <a href="#products" class="btn btn-ghost"><span class="zh">查看產品</span><span class="en">View Products</span></a>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>61.2<small style="font-size:.5em"> m/s</small></b><span><span class="zh">風洞試驗無損毀</span><span class="en">Wind tunnel, no damage</span></span></div>
-      <div class="stat"><b>5,000<small style="font-size:.5em"> hrs</small></b><span><span class="zh">鹽霧試驗 (SuperDyma®)</span><span class="en">Salt spray (SuperDyma®)</span></span></div>
-      <div class="stat"><b>2,092<small style="font-size:.5em"> kgf</small></b><span><span class="zh">平鋪型拉拔力</span><span class="en">Pull-out strength</span></span></div>
-    </div>
-  </div>
+<a class="skip" href="#main" data-en="Skip to content">跳到主要內容</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html" aria-label="創炘工業 首頁" data-en-aria="Invention Industrial home">
+<img class="brand-logo" src="images/logo.png" width="742" height="96" alt="創炘工業科技股份有限公司 Invention Industrial Technology Co., Ltd.">
+</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="開啟選單" data-en-aria="Open menu">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+<nav class="nav" id="site-nav" aria-label="主選單" data-en-aria="Main menu">
+<a class="nav-link" href="index.html" aria-current="page" data-en="Home">首頁</a>
+<a class="nav-link" href="about.html" data-en="About">關於我們</a>
+<a class="nav-link" href="products.html" data-en="Products">產品介紹</a>
+<a class="nav-link" href="contact.html" data-en="Contact">聯絡我們</a>
+<div class="lang" role="group" aria-label="語言 Language">
+<button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+<button type="button" data-set-lang="en" aria-pressed="false">EN</button>
 </div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap about">
-    <div>
-      <div class="eyebrow">About Us</div>
-      <h2><span class="zh">專注鎂鋁鋅太陽能支架</span><span class="en">Specialists in Zn-Al-Mg Solar Mounting</span></h2>
-      <p class="sub">
-        <span class="zh">創炘工業科技股份有限公司位於高雄大寮，專注於高品質鎂鋁鋅太陽能支架。擁有多項專利設計與高耐風支架，強調耐久防蝕、高度鋼性、輕量結構、施工便利，並為客戶量身訂做專屬支架。</span>
-        <span class="en">Based in Daliao, Kaohsiung, Invention Industrial Technology Co., Ltd. focuses on high-quality zinc-aluminum-magnesium (Zn-Al-Mg) solar mounting structures. With multiple patented designs and high wind-resistance systems, we deliver durability, corrosion resistance, high rigidity, light weight and easy installation — custom-built for every client.</span>
-      </p>
-      <ul class="checks">
-        <li><span class="zh">原料自行進口、去中間化，提供最實惠的價格</span><span class="en">Self-imported raw materials, no middleman — better prices</span></li>
-        <li><span class="zh">品質更穩定可靠</span><span class="en">More stable, reliable quality</span></li>
-        <li><span class="zh">多項支架專利設計</span><span class="en">Multiple patented mounting designs</span></li>
-        <li><span class="zh">從勘查、設計到出貨與售後一條龍服務</span><span class="en">One-stop service from site survey and design to delivery and after-sales</span></li>
-      </ul>
-    </div>
-    <div class="ph"><img src="images/about.jpg" alt="" loading="lazy"></div>
-  </div>
+<a class="btn btn--cta" href="contact.html#quote" data-en="Get a Quote">立即詢價</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<span class="eyebrow" data-en="Roof-mount solar racking">屋頂型太陽能支架</span>
+<h1 class="h1" data-en="Precision&lt;br&gt;Engineered">精工設計</h1>
+<p class="lede" data-en="Racking engineered by a steel company. Magnesium-aluminum-zinc steel, a dedicated base for every roof-sheet profile, and wind-tunnel tested structures that go up fast on site.">源自鋼鐵本業的結構工藝。鎂鋁鋅鋼材、對應每種浪板的專屬底座、經風洞試驗的結構，讓屋頂案場裝得快、撐得久。</p>
+<div class="hero-actions">
+<a class="btn btn--cta" href="contact.html#quote" data-en="Get a Quote">立即詢價</a>
+<a class="btn btn--ghost" href="products.html" data-en="View Products">看產品規格</a>
+</div>
+</div>
+<figure class="hero-photo" style="margin:0">
+<img src="images/hero-roof.jpg" width="509" height="349" alt="廠房屋頂上整排太陽能板，使用創炘支架安裝">
+<figcaption data-en="Completed rooftop project">屋頂案場完工實景</figcaption>
+</figure>
+</div>
 </section>
 
-<!-- ADVANTAGES -->
-<section class="alt">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Why Invention</div>
-      <h2><span class="zh">為什麼選擇創炘</span><span class="en">Why Choose Invention</span></h2>
-    </div>
-    <div class="grid g4">
-      <div class="card adv"><div class="ico">原</div><h3><span class="zh">原料進口商</span><span class="en">Direct Importer</span></h3><p><span class="zh">品質保證，價格具競爭力</span><span class="en">Guaranteed quality, competitive pricing</span></p></div>
-      <div class="card adv"><div class="ico">時</div><h3><span class="zh">準時交貨</span><span class="en">On-Time Delivery</span></h3><p><span class="zh">配合度高，專車出貨至案場</span><span class="en">Flexible; dedicated truck delivery to site</span></p></div>
-      <div class="card adv"><div class="ico">技</div><h3><span class="zh">技師認可</span><span class="en">Engineer Approved</span></h3><p><span class="zh">專案設計，專業工程繪圖</span><span class="en">Project-specific engineering design</span></p></div>
-      <div class="card adv"><div class="ico">服</div><h3><span class="zh">完整售後服務</span><span class="en">Full After-Sales</span></h3><p><span class="zh">完工後持續提供支援</span><span class="en">Ongoing support after completion</span></p></div>
-    </div>
-  </div>
+<section class="proof" aria-label="試驗數據">
+<div class="wrap proof-grid">
+<div class="proof-item">
+<span class="proof-val">61.2<small>m/s</small></span>
+<span class="proof-label" data-en="Wind tunnel, 15 min, no damage or loose parts">風洞試驗 15 分鐘，無損毀、無掉落物</span>
+</div>
+<div class="proof-item">
+<span class="proof-val">1,505<small>kgf</small></span>
+<span class="proof-label" data-en="Pull-out test, flush-mount base with self-drilling screws">屋頂平鋪型拉拔力試驗（自攻釘）</span>
+<span class="proof-src">KR-21-00019</span>
+</div>
+<div class="proof-item">
+<span class="proof-val">5,000<small>hrs</small></span>
+<span class="proof-label" data-en="Salt spray test, SuperDyma® steel">SuperDyma® 鋼板鹽霧試驗</span>
+<span class="proof-src">DK-19-00933</span>
+</div>
+<div class="proof-item">
+<span class="proof-val">ISO 8.8</span>
+<span class="proof-label" data-en="Acid-resistant fasteners on every kit">全系列採用耐酸螺絲</span>
+</div>
+</div>
 </section>
 
-<!-- PROCESS -->
-<section class="dark">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Our Procedure</div>
-      <h2><span class="zh">專案規劃流程</span><span class="en">Project Workflow</span></h2>
-    </div>
-    <div class="steps">
-      <div class="step"><b><span class="zh">諮詢洽談</span><span class="en">Consultation</span></b></div>
-      <div class="step"><b><span class="zh">現場勘查及丈量</span><span class="en">Site Survey</span></b></div>
-      <div class="step"><b><span class="zh">專業工程設計繪圖</span><span class="en">Engineering Design</span></b></div>
-      <div class="step"><b><span class="zh">專案報價及下單</span><span class="en">Quote &amp; Order</span></b></div>
-      <div class="step"><b><span class="zh">專車出貨至案場</span><span class="en">Delivery to Site</span></b></div>
-      <div class="step"><b><span class="zh">完整售後服務</span><span class="en">After-Sales</span></b></div>
-      <div class="step"><b><span class="zh">客戶滿意</span><span class="en">Satisfaction</span></b></div>
-    </div>
-  </div>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head">
+<div class="stack">
+<span class="eyebrow" data-en="Products">產品介紹</span>
+<h2 class="h2" data-en="Built for metal roofs">為鐵皮屋頂而設計</h2>
+<p class="lede" data-en="Tell us your roof-sheet profile. Each one gets its own base or clamp, so nothing is modified on the roof.">告訴我們浪板型式，就有對應的專屬底座或夾具，屋頂上不必再改料。</p>
+</div>
+<a class="link-arrow" href="products.html" data-en="All products →">全部產品 →</a>
+</div>
+<div class="prod-grid">
+<a class="prod-card" href="products.html#flush">
+<div class="prod-img"><img src="images/base-015.jpg" width="640" height="640" alt="屋頂平鋪型底座 型號 015" loading="lazy"></div>
+<div class="prod-body">
+<span class="tag" data-en="Roof · Core line">屋頂型｜主力</span>
+<h3 class="h3" data-en="Flush-Mount Bases">屋頂平鋪型</h3>
+<p data-en="Bases matched to the rib count and rib height of 750 and 700 trapezoidal sheets.">依 750、700 型浪板的溝數與浪峰高度，搭配專屬底座。</p>
+<span class="prod-models" data-en="Models 015 · 060 · 069">型號 015 · 060 · 069</span>
+</div>
+</a>
+<a class="prod-card" href="products.html#clamp">
+<div class="prod-img"><img src="images/clamp-017.jpg" width="640" height="640" alt="屋頂夾具型 型號 017" loading="lazy"></div>
+<div class="prod-body">
+<span class="tag" data-en="Roof · Core line">屋頂型｜主力</span>
+<h3 class="h3" data-en="Seam Clamps">屋頂夾具型</h3>
+<p data-en="Clamps onto standing-seam and snap-lock sheets. No holes in the roof.">夾持咬合式、扣合式浪板，不在屋面鑽孔，保留原有防水。</p>
+<span class="prod-models" data-en="Models 71+72 · 017 · Al001">型號 71+72 · 017 · Al001</span>
+</div>
+</a>
+<a class="prod-card" href="products.html#rail">
+<div class="prod-img"><img src="images/rail.jpg" width="640" height="640" alt="琉璃鋼瓦專用滑軌型支架" loading="lazy"></div>
+<div class="prod-body">
+<span class="tag" data-en="Roof">屋頂型</span>
+<h3 class="h3" data-en="Rail System">滑軌型</h3>
+<p data-en="For glazed steel tile and irregular sheets. Rail kit pull-out tested to 1,287 kgf.">琉璃鋼瓦與特殊浪板專用，滑軌支架組件拉拔力達 1,287 kgf。</p>
+<span class="prod-models" data-en="Report KR-21-00033">報告 KR-21-00033</span>
+</div>
+</a>
+</div>
+<div class="prod-grid prod-grid--2">
+<a class="prod-card prod-card--row" href="products.html#pergola">
+<div class="prod-img"><img src="images/pergola.jpg" width="864" height="1144" alt="棚架型支架立柱" loading="lazy"></div>
+<div class="prod-body">
+<span class="tag tag--grey" data-en="Carport · Canopy">棚架</span>
+<h3 class="h3" data-en="Canopy Structures">棚架型</h3>
+<p data-en="All Mg-Al-Zn steel, with double C-channel or square-tube frames.">全鎂鋁鋅材質，C 型鋼雙拼或鎂鋁鋅方管結構。</p>
+</div>
+</a>
+<a class="prod-card prod-card--row" href="products.html#heavy">
+<div class="prod-img"><img src="images/heavy.jpg" width="640" height="640" alt="載重型支架" loading="lazy"></div>
+<div class="prod-body">
+<span class="tag tag--grey" data-en="Custom">客製</span>
+<h3 class="h3" data-en="Heavy-Duty">載重型</h3>
+<p data-en="Reinforced brackets for higher loads. Specified per project.">加強型結構，依案場載重需求設計。</p>
+</div>
+</a>
+</div>
+</div>
 </section>
 
-<!-- MATERIAL -->
-<section id="material">
-  <div class="wrap mat">
-    <div>
-      <div class="eyebrow">About Material</div>
-      <h2><span class="zh">鎂鋁鋅：會自我修復的防鏽鋼材</span><span class="en">Zn-Al-Mg: Self-Healing Corrosion Protection</span></h2>
-      <p class="sub">
-        <span class="zh">支架切割後，切割面起初會出現紅鏽。隨著鍍層中的鎂（Mg）與鋅（Zn）逐漸形成一層穩定的保護膜 <span class="formula">Simonkolleite</span>（Zn₅(OH)₈Cl₂·H₂O），將切割面包覆住，達到防鏽效果。</span>
-        <span class="en">Cut edges may show red rust at first. Over time, the magnesium (Mg) and zinc (Zn) in the coating form a stable protective layer called <span class="formula">Simonkolleite</span> (Zn₅(OH)₈Cl₂·H₂O), which seals the cut edge and stops corrosion.</span>
-      </p>
-      <div class="compare">
-        <div><span><span class="zh">鎂鋁鋅支架室外實測</span><span class="en">Outdoor field test of our Zn-Al-Mg mounts</span></span><span></span></div>
-        <div><span><span class="zh">追蹤期間</span><span class="en">Exposure tracked</span></span><span>2 / 18 / 24 / 36 <span class="zh">個月</span><span class="en">months</span></span></div>
-        <div class="hl"><span><span class="zh">結果</span><span class="en">Result</span></span><span><span class="zh">切割面紅鏽被保護膜包覆</span><span class="en">Cut-edge rust sealed by protective layer</span></span></div>
-      </div>
-      <h3 style="margin-top:30px;font-size:18px"><span class="zh">選用材質</span><span class="en">Steel We Use</span></h3>
-      <div class="brands">
-        <div class="brand-chip"><b>SuperDyma®</b><span><span class="zh">日鐵住金・鍍層 K35</span><span class="en">Nippon Steel · coating K35</span></span></div>
-        <div class="brand-chip"><b>PosMAC®</b><span><span class="zh">韓國浦項 POSCO・鍍層 M35</span><span class="en">POSCO, Korea · coating M35</span></span></div>
-      </div>
-    </div>
-    <div class="ph"><img src="images/material.jpg" alt="" loading="lazy"></div>
-  </div>
+<section class="sec sec--mist">
+<div class="wrap split">
+<div class="stack">
+<span class="eyebrow" data-en="Why Invention">為什麼選創炘</span>
+<h2 class="h2" data-en="A steel company&lt;br&gt;making racking">鋼鐵公司<br>做的支架</h2>
+<p class="lede" data-en="We have worked with steel for years. We know how each grade bends, coats and corrodes, and we design brackets around that.">我們跟鋼材打交道多年，清楚每種板材怎麼加工、怎麼受力、怎麼生鏽，支架就從這些地方開始設計。</p>
+<img src="images/factory.jpg" width="565" height="445" alt="創炘工業高雄大寮廠區外觀" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;margin-top:8px">
+<a class="link-arrow" href="about.html" style="align-self:flex-start" data-en="About us →">認識創炘 →</a>
+</div>
+<div class="why-list">
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+<h3 class="h3" data-en="Self-healing coating">鎂鋁鋅自我修復</h3>
+<p data-en="Cut edges form a protective film over time and stop red rust spreading.">裁切面會逐漸生成保護膜，包覆紅鏽。</p>
+</div>
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h12"/></svg>
+<h3 class="h3" data-en="Direct steel import">原料自行進口</h3>
+<p data-en="SuperDyma® and POSCO PosMAC® coil bought direct. Stable quality, fair price.">SuperDyma®、PosMAC® 直接進口，品質穩定、價格實在。</p>
+</div>
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-5h6v5"/></svg>
+<h3 class="h3" data-en="Engineer approved">技師認可</h3>
+<p data-en="Project designs and drawings recognized by structural engineers.">專案設計繪圖，經技師認可。</p>
+</div>
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="13" height="10"/><path d="M15 10h4l3 3v4h-7"/><circle cx="6.5" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg>
+<h3 class="h3" data-en="On-time delivery">準時交貨</h3>
+<p data-en="Dedicated truck delivery to site, scheduled around your crew.">專車直送案場，配合施工進度。</p>
+</div>
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v16H7z"/><path d="M10 8h4M10 12h4"/></svg>
+<h3 class="h3" data-en="Patented designs">專利設計</h3>
+<p data-en="Several bracket designs are patented.">多項支架設計取得專利。</p>
+</div>
+<div class="why-item">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg>
+<h3 class="h3" data-en="After-sales support">完整售後</h3>
+<p data-en="We stay on the project after delivery.">交貨後持續支援，問題直接找得到人。</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products" class="alt">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Our Products</div>
-      <h2><span class="zh">產品介紹</span><span class="en">Products</span></h2>
-      <p class="sub"><span class="zh">針對不同型式浪板提供專屬底座，五大系列對應屋頂、棚架與特殊屋面。</span><span class="en">Dedicated bases for every type of corrugated roof sheet — five product lines covering rooftops, carports/canopies and special roofs.</span></p>
-    </div>
-    <div class="tabs" role="tablist">
-      <button class="tab on" data-p="p1"><span class="zh">屋頂平鋪型</span><span class="en">Flat Roof Mount</span></button>
-      <button class="tab" data-p="p2"><span class="zh">屋頂夾具型</span><span class="en">Roof Clamp</span></button>
-      <button class="tab" data-p="p3"><span class="zh">棚架型</span><span class="en">Canopy</span></button>
-      <button class="tab" data-p="p4"><span class="zh">載重型</span><span class="en">Heavy-Load</span></button>
-      <button class="tab" data-p="p5"><span class="zh">滑軌型</span><span class="en">Rail Type</span></button>
-    </div>
-
-    <div class="panel on" id="p1">
-      <div class="ph contain"><img src="images/p1.jpg" alt="" loading="lazy"></div>
-      <div>
-        <h3 style="font-size:22px;margin-bottom:6px"><span class="zh">屋頂平鋪型</span><span class="en">Flat Roof Mount</span></h3>
-        <p class="sub" style="margin-bottom:18px"><span class="zh">依浪板型號提供專屬底座，緊密貼合浪峰。</span><span class="en">Bases matched to each roof-sheet profile for a tight fit on the ribs.</span></p>
-        <div class="models">
-          <div class="model"><div class="no">069</div><div><span class="zh">適用浪板：</span><span class="en">Roof sheet: </span>700<span class="zh">型</span><span class="en"> type</span></div><div><span><span class="zh">浪峰高度</span><span class="en">Rib height</span>: 69mm (±2)</span></div></div>
-          <div class="model"><div class="no">015</div><div><span class="zh">適用浪板：750型五溝</span><span class="en">Roof sheet: 750 type, 5-rib</span></div><div><span><span class="zh">浪峰高度</span><span class="en">Rib height</span>: 24.5mm (±2)</span></div></div>
-          <div class="model"><div class="no">060</div><div><span class="zh">適用浪板：750型三溝</span><span class="en">Roof sheet: 750 type, 3-rib</span></div><div><span><span class="zh">浪峰高度</span><span class="en">Rib height</span>: 38mm (±2)</span></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="p2">
-      <div class="ph contain"><img src="images/p2.jpg" alt="" loading="lazy"></div>
-      <div>
-        <h3 style="font-size:22px;margin-bottom:6px"><span class="zh">屋頂夾具型</span><span class="en">Roof Clamp</span></h3>
-        <p class="sub" style="margin-bottom:18px"><span class="zh">適用扣合式、咬合式浪板，免穿孔夾持固定。</span><span class="en">For snap-lock and standing-seam roof sheets — clamps on without drilling the roof.</span></p>
-        <div class="models">
-          <div class="model"><div class="no">Al001</div><div><span class="zh">適用浪板：430B 扣合式</span><span class="en">Roof sheet: 430B snap-lock</span></div><div><span><span class="zh">鋁夾具組</span><span class="en">Aluminum clamp set</span></span></div></div>
-          <div class="model"><div class="no">71+72</div><div><span class="zh">適用浪板：730B 咬合式</span><span class="en">Roof sheet: 730B seam-lock</span></div><div><span>&nbsp;</span></div></div>
-          <div class="model"><div class="no">017</div><div><span class="zh">適用浪板：730B 咬合式</span><span class="en">Roof sheet: 730B seam-lock</span></div><div><span><span class="zh">夾具組合</span><span class="en">Clamp assembly</span></span></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="p3">
-      <div class="ph"><img src="images/p3.jpg" alt="" loading="lazy"></div>
-      <div>
-        <h3 style="font-size:22px;margin-bottom:6px"><span class="zh">棚架型</span><span class="en">Canopy / Carport Structure</span></h3>
-        <p class="sub" style="margin-bottom:18px"><span class="zh">適用地面、停車棚、農業設施等棚架型案場。</span><span class="en">For ground-mounted, carport and agricultural canopy projects.</span></p>
-        <div class="models">
-          <div class="model"><div class="no">A</div><div><span class="zh">C 型鋼雙拼 ／ 鎂鋁鋅方管</span><span class="en">Double C-channel / Zn-Al-Mg square tube</span></div><div><span>&nbsp;</span></div></div>
-          <div class="model"><div class="no">B</div><div><span class="zh">全鎂鋁鋅材質</span><span class="en">All Zn-Al-Mg construction</span></div><div><span>&nbsp;</span></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" id="p4">
-      <div class="ph contain"><img src="images/p4.jpg" alt="" loading="lazy"></div>
-      <div>
-        <h3 style="font-size:22px;margin-bottom:6px"><span class="zh">載重型</span><span class="en">Heavy-Load Type</span></h3>
-        <p class="sub"><span class="zh">適用需高承載的案場，詳細規格請與我們聯繫。</span><span class="en">For projects requiring high load capacity. Contact us for specifications.</span></p>
-        <a href="#contact" class="btn btn-sun" style="margin-top:20px"><span class="zh">詢問規格</span><span class="en">Ask for Specs</span> →</a>
-      </div>
-    </div>
-
-    <div class="panel" id="p5">
-      <div class="ph contain"><img src="images/p5.jpg" alt="" loading="lazy"></div>
-      <div>
-        <h3 style="font-size:22px;margin-bottom:6px"><span class="zh">滑軌型</span><span class="en">Rail Type</span></h3>
-        <p class="sub" style="margin-bottom:18px"><span class="zh">適用於琉璃鋼瓦或特殊形式之浪板。</span><span class="en">For glazed steel tiles and special roof-sheet profiles.</span></p>
-        <div class="models">
-          <div class="model"><div class="no">1,287</div><div><span class="zh">kgf 拉拔力（琉璃鋼瓦專用滑軌支架組件）</span><span class="en">kgf pull-out (glazed-tile rail assembly)</span></div><div><span><span class="zh">報告編號</span><span class="en">Report</span> KR-21-00033</span></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head">
+<div class="stack">
+<span class="eyebrow" data-en="Projects">實績分享</span>
+<h2 class="h2" data-en="Installed on factory roofs across Taiwan">裝在台灣各地的廠房屋頂</h2>
+</div>
+</div>
+<div class="proj-grid">
+<figure class="proj"><img src="images/project-1.jpg" width="599" height="337" alt="禾O有限公司 屋頂太陽能案場" loading="lazy"><figcaption><strong data-en="He-O Co.">禾O有限公司</strong><span data-en="Rooftop array">屋頂案場</span></figcaption></figure>
+<figure class="proj"><img src="images/project-4.jpg" width="431" height="323" alt="環O活動中心 琉璃鋼瓦屋頂滑軌型支架" loading="lazy"><figcaption><strong data-en="Huan-O Center">環O活動中心</strong><span data-en="Glazed tile, rail system">琉璃鋼瓦｜滑軌型</span></figcaption></figure>
+<figure class="proj"><img src="images/project-2.jpg" width="555" height="312" alt="龍O有限公司 屋頂太陽能案場" loading="lazy"><figcaption><strong data-en="Long-O Co.">龍O有限公司</strong><span data-en="Rooftop array">屋頂案場</span></figcaption></figure>
+<figure class="proj"><img src="images/project-3.jpg" width="563" height="342" alt="沐O有限公司 屋頂支架安裝中" loading="lazy"><figcaption><strong data-en="Mu-O Co.">沐O有限公司</strong><span data-en="Racking installed">支架安裝</span></figcaption></figure>
+<figure class="proj"><img src="images/project-5.jpg" width="490" height="275" alt="屋頂支架與太陽能板安裝" loading="lazy"><figcaption><strong data-en="Factory roof">廠房屋頂</strong><span data-en="Array in progress">模組安裝中</span></figcaption></figure>
+<figure class="proj"><img src="images/project-6.jpg" width="508" height="353" alt="屋頂支架施工完成，等待上板" loading="lazy"><figcaption><strong data-en="Long-O Co.">龍O有限公司</strong><span data-en="Racking ready for modules">支架完工</span></figcaption></figure>
+</div>
+</div>
 </section>
 
-<!-- TESTS -->
-<section id="tests" class="dark">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Test Reports</div>
-      <h2><span class="zh">產品檢驗報告</span><span class="en">Product Test Reports</span></h2>
-      <p class="sub"><span class="zh">每一款關鍵零件都經過第三方試驗，用數據證明強度與耐久。</span><span class="en">Key components are independently tested — strength and durability backed by data.</span></p>
-    </div>
-    <div class="test-feature">
-      <div class="big"><b>61.2<small>m/s</small></b><h3><span class="zh">風洞試驗</span><span class="en">Wind Load Resistance Test</span></h3><p><span class="zh">平均風速 61.2 m/s 持續 15 分鐘（角度 0°、270°），無任何損毀及掉落物。</span><span class="en">Average wind speed of 61.2 m/s for 15 minutes (0° and 270°) — no damage, no falling parts.</span></p></div>
-      <div class="big"><b>5,000<small>hrs</small></b><h3><span class="zh">鹽霧試驗</span><span class="en">Salt Spray Test</span></h3><p><span class="zh">SuperDyma® 鋼材通過 5,000 小時鹽霧試驗。報告編號 DK-19-00933</span><span class="en">SuperDyma® steel after 5,000 hours of salt spray. Report No. DK-19-00933</span></p></div>
-    </div>
-    <img src="images/wind.jpg" alt="Wind tunnel test" loading="lazy" style="border-radius:10px;margin-top:4px;width:100%;max-width:720px">
-    <h3 style="margin:34px 0 14px;font-size:19px"><span class="zh">拉拔力試驗 Tensile Test</span><span class="en">Tensile / Pull-out Tests</span></h3>
-    <div class="tbl">
-      <table>
-        <thead><tr><th><span class="zh">測試項目</span><span class="en">Item</span></th><th><span class="zh">結果</span><span class="en">Result</span></th><th><span class="zh">報告編號</span><span class="en">Report No.</span></th></tr></thead>
-        <tbody>
-          <tr><td><span class="zh">中壓塊 (003)</span><span class="en">Mid clamp (003)</span></td><td><b style="color:var(--sun)">1,008 kgf</b></td><td class="r">KR-21-00028</td></tr>
-          <tr><td><span class="zh">側壓塊 (082)</span><span class="en">End clamp (082)</span></td><td><b style="color:var(--sun)">885 kgf</b></td><td class="r">KR-21-00027</td></tr>
-          <tr><td><span class="zh">平鋪型 (08+15)・木攻釘</span><span class="en">Flat mount (08+15), wood screw</span></td><td><b style="color:var(--sun)">2,092 kgf</b></td><td class="r">KR-21-00017</td></tr>
-          <tr><td><span class="zh">平鋪型 (08+15)・自攻釘</span><span class="en">Flat mount (08+15), self-tapping screw</span></td><td><b style="color:var(--sun)">1,505 kgf</b></td><td class="r">KR-21-00019</td></tr>
-          <tr><td><span class="zh">夾具組合 (017)</span><span class="en">Clamp assembly (017)</span></td><td><b style="color:var(--sun)">955 kgf</b></td><td class="r">KK-18-07472</td></tr>
-          <tr><td><span class="zh">鋁夾具組 (Al001)</span><span class="en">Aluminum clamp set (Al001)</span></td><td><b style="color:var(--sun)">531 kgf</b></td><td class="r">KK-18-11903</td></tr>
-          <tr><td><span class="zh">琉璃鋼瓦專用滑軌支架組件</span><span class="en">Glazed-tile rail assembly</span></td><td><b style="color:var(--sun)">1,287 kgf</b></td><td class="r">KR-21-00033</td></tr>
-          <tr><td><span class="zh">縱樑組合</span><span class="en">Longitudinal beam assembly</span></td><td><b style="color:var(--sun)">913 kgf</b></td><td class="r">KK-18-08507A</td></tr>
-          <tr><td><span class="zh">鎂鋁鋅鋼材強度（2.3 / 3.2mm）</span><span class="en">Zn-Al-Mg steel strength (2.3 / 3.2mm)</span></td><td><span class="zh">詳見報告</span><span class="en">See report</span></td><td class="r">KK-21-01008</td></tr>
-          <tr><td><span class="zh">C 型鋼抗彎強度－正面（1.6mm）</span><span class="en">C-channel bending, front (1.6mm)</span></td><td><b style="color:var(--sun)">333 kgf</b></td><td class="r">KR-21-00029</td></tr>
-          <tr><td><span class="zh">C 型鋼抗彎強度－側面（1.6mm）</span><span class="en">C-channel bending, side (1.6mm)</span></td><td><b style="color:var(--sun)">355 kgf</b></td><td class="r">KR-21-00030</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<section class="sec sec--mist">
+<div class="wrap">
+<div class="sec-head">
+<div class="stack">
+<span class="eyebrow" data-en="How we work">合作流程</span>
+<h2 class="h2" data-en="From site survey to delivery">從丈量到出貨，同一個團隊</h2>
+</div>
+</div>
+<ol class="steps">
+<li><strong data-en="Consultation">諮詢洽談</strong><span data-en="Roof type, area, schedule">屋頂型式、面積、工期</span></li>
+<li><strong data-en="Site survey">現場勘查丈量</strong><span data-en="Measure sheet profile and purlins">量測浪板與桁條</span></li>
+<li><strong data-en="Quote &amp; order">報價及下單</strong><span data-en="Itemized bill of materials">逐項材料清單</span></li>
+<li><strong data-en="Engineering drawings">工程設計繪圖</strong><span data-en="Layout and structural drawings">配置圖與結構圖</span></li>
+<li><strong data-en="Truck delivery">專車出貨</strong><span data-en="Straight to site">直送案場</span></li>
+<li><strong data-en="After-sales">售後服務</strong><span data-en="Support after install">完工後持續支援</span></li>
+</ol>
+</div>
 </section>
 
-<!-- SCREWS -->
-<section>
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Fasteners</div>
-      <h2><span class="zh">採用螺絲</span><span class="en">Fasteners We Use</span></h2>
-      <p class="sub"><span class="zh">支架再好，螺絲也不能是弱點。我們選用兩大品牌 ISO 8.8 級螺絲。</span><span class="en">A structure is only as strong as its fasteners — we use ISO 8.8 grade screws from two trusted brands.</span></p>
-    </div>
-    <div class="grid g2" style="margin-bottom:36px">
-      <div class="card"><h3><span class="zh">錡瑞耐酸螺絲</span><span class="en">Chi-Rui Acid-Resistant Screws</span></h3><p><span class="zh">ISO 8.8 級。通過酸雨模擬（25 cycles）、鹽霧、振動及拉伸試驗。</span><span class="en">ISO 8.8 grade. Passed acid-rain simulation (25 cycles), salt spray, vibration and tensile tests.</span></p></div>
-      <div class="card"><h3>XP® <span class="zh">緻揚螺絲</span><span class="en">Screws</span></h3><p><span class="zh">ISO 8.8 級。依 ISO 9223 大氣腐蝕環境分類提供保證耐用年限。</span><span class="en">ISO 8.8 grade. Service-life warranty by ISO 9223 atmospheric corrosivity category.</span></p></div>
-    </div>
-    <div class="iso" style="overflow-x:auto">
-      <table>
-        <thead><tr><th><span class="zh">ISO 9223 腐蝕等級</span><span class="en">ISO 9223 Category</span></th><th><span class="zh">環境</span><span class="en">Environment</span></th><th><span class="zh">XP® 保證耐用年限</span><span class="en">XP® Warranty Life</span></th></tr></thead>
-        <tbody>
-          <tr><td>C1–C2</td><td><span class="zh">很低及低腐蝕</span><span class="en">Very low &amp; low</span></td><td><span class="zh">超過 45 年</span><span class="en">Over 45 years</span></td></tr>
-          <tr><td>C3</td><td><span class="zh">中等腐蝕</span><span class="en">Medium</span></td><td><span class="zh">45 年</span><span class="en">45 years</span></td></tr>
-          <tr><td>C4</td><td><span class="zh">高腐蝕</span><span class="en">High</span></td><td><span class="zh">35 年</span><span class="en">35 years</span></td></tr>
-          <tr><td>C5</td><td><span class="zh">非常高腐蝕</span><span class="en">Very high</span></td><td><span class="zh">15–20 年</span><span class="en">15–20 years</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="font-size:13px;color:var(--muted);margin-top:10px"><span class="zh">＊耐用年限資料由緻揚原廠提供。</span><span class="en">*Service-life data provided by the XP® manufacturer.</span></p>
-  </div>
+<section class="cta-band">
+<div class="wrap">
+<div>
+<h2 data-en="Have a roof to quote?">有屋頂案場要評估？</h2>
+<p data-en="Send a photo of the roof sheet on LINE. We'll tell you which base fits.">拍一張浪板照片傳 LINE，我們幫你判斷用哪一款底座。</p>
+</div>
+<a class="btn btn--navy" href="contact.html#quote" data-en="Contact Us">聯絡我們</a>
+</div>
 </section>
 
-<!-- CASES -->
-<section id="cases" class="alt">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Projects</div>
-      <h2><span class="zh">實績分享</span><span class="en">Completed Projects</span></h2>
-    </div>
-    <div class="grid g3">
-      <figure class="case"><div class="ph"><img src="images/c1.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">科O有限公司</span><span class="en">Client K</span></figcaption></figure>
-      <figure class="case"><div class="ph"><img src="images/c2.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">仁O有限公司</span><span class="en">Client R</span></figcaption></figure>
-      <figure class="case"><div class="ph"><img src="images/c3.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">禾O有限公司</span><span class="en">Client H</span></figcaption></figure>
-      <figure class="case"><div class="ph"><img src="images/c4.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">龍O有限公司</span><span class="en">Client L</span></figcaption></figure>
-      <figure class="case"><div class="ph"><img src="images/c5.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">沐O有限公司</span><span class="en">Client M</span></figcaption></figure>
-      <figure class="case"><div class="ph"><img src="images/c6.jpg" alt="" loading="lazy"></div><figcaption><span class="zh">環O活動中心</span><span class="en">Community Center H</span><small><span class="zh">琉璃鋼瓦</span><span class="en">Glazed steel tile roof</span></small></figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="dark">
-  <div class="wrap">
-    <div class="head">
-      <div class="eyebrow">Contact</div>
-      <h2><span class="zh">聯絡我們，免費諮詢</span><span class="en">Contact Us for a Free Consultation</span></h2>
-      <p class="sub"><span class="zh">告訴我們案場位置與屋頂型式，我們安排現場勘查並提供專案報價。</span><span class="en">Tell us your site location and roof type — we'll arrange a survey and provide a project quote.</span></p>
-    </div>
-    <div class="contact">
-      <div class="info">
-        <a href="tel:076525535"><span class="k">Tel</span><span>07-652 5535</span></a>
-        <a href="tel:0953533585"><span class="k">Mobile</span><span>0953-533585</span></a>
-        <a href="https://line.me/ti/p/~0953533585" target="_blank" rel="noopener"><span class="k">LINE</span><span>0953533585</span></a>
-        <a href="mailto:info@invention-tech.com"><span class="k">E-mail</span><span>info@invention-tech.com</span></a>
-        <div><span class="k">Fax</span><span>07-652 5538</span></div>
-        <a href="https://maps.google.com/?q=高雄市大寮區農場路192號" target="_blank" rel="noopener"><span class="k"><span class="zh">地址</span><span class="en">Address</span></span><span><span class="zh">831 高雄市大寮區農場路 192 號</span><span class="en">No.192, Nongchang Rd., Daliao Dist., Kaohsiung City 831, Taiwan (R.O.C.)</span></span></a>
-        <a href="https://www.facebook.com/invention5080013/" target="_blank" rel="noopener"><span class="k">Facebook</span><span><span class="zh">創炘工業粉絲專頁</span><span class="en">Invention on Facebook</span></span></a>
-      </div>
-      <div class="map">
-        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"
-          src="https://www.google.com/maps?q=%E9%AB%98%E9%9B%84%E5%B8%82%E5%A4%A7%E5%AF%AE%E5%8D%80%E8%BE%B2%E5%A0%B4%E8%B7%AF192%E8%99%9F&output=embed"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <span><span class="zh">創炘工業科技股份有限公司</span><span class="en">Invention Industrial Technology Co., Ltd.</span>｜<span class="zh">統一編號</span><span class="en">Tax ID</span> 50800013</span>
-    <span>© <span id="yr">2026</span> Invention Industrial Technology Co., Ltd. All rights reserved.</span>
-  </div>
+</main>
+<footer class="site-footer">
+<div class="wrap foot-grid">
+<div class="foot-brand">
+<strong data-en="Invention Industrial Technology Co., Ltd.">創炘工業科技股份有限公司</strong>
+<span>INVENTION INDUSTRIAL TECHNOLOGY CO., LTD.</span>
+<p style="margin-top:14px;max-width:36ch" data-en="Magnesium-aluminum-zinc solar racking, engineered by a steel company.">鋼鐵本業出身的鎂鋁鋅太陽能支架製造商。</p>
+<div class="social">
+<a href="https://www.facebook.com/invention5080013/" target="_blank" rel="noopener" aria-label="Facebook 粉絲專頁" data-en-aria="Facebook page"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a>
+<a href="https://line.me/ti/p/~0953533585" target="_blank" rel="noopener" aria-label="LINE 加好友" data-en-aria="Add us on LINE"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1C21.6 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.2 13.4H6.2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.4h1.5c.3 0 .5.2.5.5s-.2.5-.5.5zm2 -.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.9zm4.7 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.7v2.4c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.7V9c0-.3.2-.5.5-.5s.5.2.5.5v3.9zm3.2-2.5c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1h1.5c.3 0 .5.2.5.5s-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1h1.5z"/></svg></a>
+</div>
+</div>
+<div>
+<p class="foot-h" data-en="Site">網站導覽</p>
+<ul class="foot-list">
+<li><a href="about.html" data-en="About">關於我們</a></li>
+<li><a href="products.html" data-en="Products">產品介紹</a></li>
+<li><a href="products.html#tests" data-en="Test reports">試驗報告</a></li>
+<li><a href="contact.html" data-en="Contact">聯絡我們</a></li>
+</ul>
+</div>
+<div>
+<p class="foot-h" data-en="Contact">聯絡資訊</p>
+<ul class="foot-list">
+<li data-en="No. 192, Nongchang Rd., Daliao Dist., Kaohsiung 831, Taiwan">831 高雄市大寮區農場路 192 號</li>
+<li><span data-en="Tel">電話</span> 07-652 5535</li>
+<li><span data-en="Mobile">手機</span> 0953-533585</li>
+<li>info@invention-tech.com</li>
+</ul>
+</div>
+</div>
+<div class="wrap foot-bottom">
+<span>© 2026 Invention Industrial Technology Co., Ltd.</span>
+<span data-en="Tax ID 50800013">統一編號 50800013</span>
+</div>
 </footer>
-
-<a class="fab" href="https://line.me/ti/p/~0953533585" target="_blank" rel="noopener">LINE <span class="zh">諮詢</span><span class="en">Chat</span></a>
-
-<script>
-(function(){
-  var root=document.documentElement;
-  function setLang(l){root.lang=l;try{localStorage.setItem('lang',l)}catch(e){}}
-  try{var s=localStorage.getItem('lang');if(s)root.lang=s}catch(e){}
-  document.getElementById('langBtn').onclick=function(){setLang(root.lang==='en'?'zh-Hant':'en')};
-  var menu=document.getElementById('menu');
-  document.getElementById('burger').onclick=function(){menu.classList.toggle('open')};
-  menu.querySelectorAll('a').forEach(function(a){a.onclick=function(){menu.classList.remove('open')}});
-  document.querySelectorAll('.tab').forEach(function(t){
-    t.onclick=function(){
-      document.querySelectorAll('.tab').forEach(function(x){x.classList.toggle('on',x===t)});
-      document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id===t.dataset.p)});
-    };
-  });
-  document.getElementById('yr').textContent=new Date().getFullYear();
-})();
-</script>
+<a class="fab-line" href="https://line.me/ti/p/~0953533585" target="_blank" rel="noopener" aria-label="用 LINE 聯絡我們" data-en-aria="Contact us on LINE"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1C21.6 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.2 13.4H6.2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.4h1.5c.3 0 .5.2.5.5s-.2.5-.5.5zm2 -.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.9zm4.7 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.7v2.4c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.7V9c0-.3.2-.5.5-.5s.5.2.5.5v3.9zm3.2-2.5c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1h1.5c.3 0 .5.2.5.5s-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1h1.5z"/></svg></a>
+<script src="assets/site.js"></script>
 </body>
 </html>
