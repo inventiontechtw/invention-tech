@@ -62,12 +62,18 @@
     d.set('_subject', '網站詢價｜' + who);
     btn.disabled = true; msg.className = 'form-msg'; msg.textContent = en ? 'Sending…' : '傳送中…';
     fetch('https://formsubmit.co/ajax/info@invention-tech.com', { method: 'POST', headers: { 'Accept': 'application/json' }, body: d })
-      .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') throw j; }); })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) !== 'true') { if (/activat/i.test(j.message || '')) { j.needsActivation = true; } throw j; } }); })
       .then(function () {
         form.reset(); msg.className = 'form-msg ok';
         msg.textContent = en ? 'Thank you! Your inquiry has been sent. We will contact you shortly.' : '已送出，謝謝您！我們會盡快與您聯繫。';
       })
-      .catch(function () {
+      .catch(function (err) {
+        if (window.console) console.warn('FormSubmit:', err && err.message ? err.message : err);
+        if (err && err.needsActivation) {
+          msg.className = 'form-msg err';
+          msg.textContent = en ? 'This form is awaiting activation. Please contact us by phone (07-652 5535) or LINE for now.' : '表單尚待啟用，請先來電 07-652 5535 或透過 LINE 聯繫，謝謝！';
+          btn.disabled = false; return;
+        }
         var body = []; d.forEach(function (v, k) { if (k.charAt(0) !== '_') body.push(k + '：' + v); });
         var href = 'mailto:info@invention-tech.com?subject=' + encodeURIComponent('網站詢價｜' + who) + '&body=' + encodeURIComponent(body.join('\n'));
         msg.className = 'form-msg err';
