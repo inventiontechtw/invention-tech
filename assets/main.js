@@ -122,7 +122,7 @@
   function presel() {
     if (!sel) return;
     var m = (location.hash.match(/^#ask-([a-z]+)$/) || [])[1] || new URLSearchParams(location.search).get('product');
-    var map = { flat: 0, clamp: 1, rail: 2, canopy: 3, parts: 4, steel: 5 };
+    var map = { flat: 0, clamp: 1, rail: 2, heavy: 3, canopy: 4, parts: 5, steel: 6 };
     if (!m || !(m in map)) return;
     sel.selectedIndex = map[m];
     var f = document.getElementById('inquiry');
